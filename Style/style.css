@@ -7,13 +7,15 @@
 }
 
 
-/* Setting Header */
+/*====================== Setting Header===================== */
 body header {
     display: flex;
     justify-content: center;
-    width: 100%;
-    height: 5vmax;
+    width: 100vmax;
+    /* height: 5vmax; */
     background-color: blue;
+    position: fixed;
+    top: 0;
 }
 
 body header nav {
@@ -50,6 +52,34 @@ body header nav ul li {
 body header ul li a {
     text-decoration: none;
     color: var(--color);
-    font-size: 1vmax;
+    font-size: 1.1vmax;
     font-weight: bold;
+}
+body header ul li a:hover{
+    color: yellow;
+}
+
+/* ========================================Setting Main==================== */
+body main{
+    margin-top: 5vmax;
+    height: 1000px;
+    width: 100%;
+    border: 1px solid black;
+}
+/* Setting Responsife */
+@media screen and (max-width:720px) {
+    body header{
+        flex-direction: column;
+        width: 100%;
+    }
+    body header nav ul{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        
+    }
+    body header nav ul li a{
+        font-size: 2vmax;
+    }
 }
