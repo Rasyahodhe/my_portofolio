@@ -2,8 +2,9 @@
     margin: 0;
     padding: 0;
 }
-:root{
-    --color:white;
+
+:root {
+    --color: white;
 }
 
 
@@ -55,31 +56,89 @@ body header ul li a {
     font-size: 1.1vmax;
     font-weight: bold;
 }
-body header ul li a:hover{
+
+body header ul li a:hover {
     color: yellow;
 }
 
 /* ========================================Setting Main==================== */
-body main{
+body main {
+    display: flex;
     margin-top: 5vmax;
     height: 1000px;
     width: 100%;
     border: 1px solid black;
+    padding: 20px;
+    gap: 1vmax;
 }
-/* Setting Responsife */
+
+body main .content {
+    width: 50%;
+    height: 50vmax;
+    border: 1px solid black;
+}
+
+body main .content .a1 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+body main .content .a1 h2 {
+    font-size: 7em;
+    font-family: 'Croissant One', cursive;
+}
+body main .content .a1 p{
+    font-size: 1.5em;
+}
+
+
+body main aside {
+    width: 50%;
+    height: 50vmax;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    gap: 2vmax;
+    align-items: center;
+}
+
+body main aside .gambar {
+    width: 40%;
+    height: 20vmax;
+    border: 1px solid red;
+}
+
+body main aside .pilihan {
+    width: 100%;
+    height: 10vmax;
+    border: 1px solid yellow;
+}
+
+body footer {
+    height: 5vmax;
+    width: 100%;
+    border: 1px solid green;
+
+}
+
+/* =======================================Setting Responsife===================== */
 @media screen and (max-width:720px) {
-    body header{
+    body header {
         flex-direction: column;
         width: 100%;
     }
-    body header nav ul{
+
+    body header nav ul {
         flex-direction: column;
         justify-content: center;
         align-items: center;
         width: 100%;
-        
+
     }
-    body header nav ul li a{
+
+    body header nav ul li a {
         font-size: 2vmax;
     }
 }
