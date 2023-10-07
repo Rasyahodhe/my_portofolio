@@ -5,13 +5,18 @@
 
 :root {
     --color: white;
-    --height: 8vh;
+    --heightforleptop: 8vh;
+    --heightfortablet: 15vh;
     --fonthead: "Montez";
     --fontnavbar: "Montserrat";
 }
 
 html {
     scroll-behavior: smooth;
+}
+
+body {
+    height: 10000px;
 }
 
 @font-face {
@@ -32,7 +37,7 @@ html {
 /*====================== Setting Header===================== */
 header {
     width: 100%;
-    height: var(--height);
+    height: var(--heightforleptop);
     border: 1px solid black;
     background-color: #132043;
     color: var(--color);
@@ -44,7 +49,7 @@ header nav {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    height: var(--height);
+    height: var(--heightforleptop);
 
 }
 
@@ -92,7 +97,7 @@ header nav input {
 }
 
 header nav .menu-hamburger span {
-    width: 100%;
+    width: 20px;
     height: 3px;
     background-color: white;
     transition: all 0.5s;
@@ -119,13 +124,63 @@ header nav .menu-hamburger input:checked~span:nth-child(3) {
     transform: scale(0);
 }
 
+
+
+
+
+/* ===============================Setting  Main====================*/
+main {
+    padding-top: 10vh;
+}
+
+main aside {
+    display: flex;
+}
+
+main aside .gambar {
+    width: 50%;
+    background-color: yellow;
+    background-image: url("");
+}
+
+
+
+
+
+
+
 /* ======================Break Point================ */
 /* ====================Responsive============= */
 /* =============================For tablet=============== */
-@media screen and (max-width:768px) {}
+@media screen and (max-width:768px) {
+
+    /* Seting Header Tablet */
+    header {
+        height: var(--heightfortablet);
+    }
+
+    header nav {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        height: var(--heightfortablet);
+
+    }
+
+    header nav .nav-menu {
+        width: 100%;
+    }
+
+    header nav .menu-hamburger {
+        display: none;
+    }
+
+}
 
 /*============================ For Android================== */
-@media screen and (max-width:568px) {
+@media screen and (max-width:540px) {
+
+    /* setting Header for android */
     header nav .nav-menu {
         display: flex;
         flex-direction: column;
@@ -151,6 +206,9 @@ header nav .menu-hamburger input:checked~span:nth-child(3) {
 
     header nav .menu-hamburger {
         display: flex;
+        position: absolute;
+        right: 0;
+        padding-right: 20px;
     }
 
 
