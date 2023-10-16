@@ -54,7 +54,7 @@ header nav {
 }
 
 header nav h1 {
-    font-size: 2em;
+    font-size: 4em;
     font-family: var(--fonthead);
     cursor: pointer;
 }
@@ -64,6 +64,7 @@ header nav .nav-menu {
     display: flex;
     justify-content: space-evenly;
     font-family: var(--fontnavbar);
+    font-size: 2em;
 }
 
 header nav .nav-menu a {
@@ -129,25 +130,94 @@ header nav .menu-hamburger input:checked~span:nth-child(3) {
 
 
 /* ===============================Setting  Main====================*/
+/* Main header */
 main {
     padding-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
 }
 
 main aside {
     display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../Foto/bakgrounhead.webp");
+    background-size: cover;
+    border-bottom-left-radius: 10%;
+    border-bottom-right-radius: 5%;
 }
 
 main aside .gambar {
+    width: 20%;
+    height: 40vh;
+    background-image: url("../bahan/logo/logo.png");
+    background-size: cover;
+    background-position: center;
+
+}
+
+main .mainheader {
     width: 50%;
-    background-color: yellow;
-    background-image: url("");
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 8vw;
+    color: white;
+}
+
+main .mainheader h2 {
+    font-size: 2vmax;
+    color: yellow;
+}
+
+main .mainheader .name {
+    font-size: 3vmax;
+    font-weight: bold;
+}
+
+/* main header menusocialmedia */
+main .mainheader>.menumedia {
+    width: 100%;
+    height: 5vh;
+}
+
+main .mainheader>.menumedia>.menumediaitem {
+    width: 25%;
+    height: 5vh;
+    display: flex;
+    gap: 0.5vw;
+    padding: 10px;
+}
+
+main .mainheader>.menumedia>.menumediaitem img {
+    width: 15%;
+    height: 3.5vh;
 }
 
 
 
 
 
+/* main content */
 
+main .content {
+    width: 100%;
+    height: 60vh;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+}
+
+main .content .artikel {
+    width: 60%;
+    height: 60vh;
+    border: 1px solid black;
+}
+
+main .content .artikel .a1 {}
 
 /* ======================Break Point================ */
 /* ====================Responsive============= */
@@ -211,5 +281,7 @@ main aside .gambar {
         padding-right: 20px;
     }
 
-
+    main aside {
+        flex-direction: column;
+    }
 }
