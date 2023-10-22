@@ -250,11 +250,11 @@ main .container-menu {
 }
 
 main .container-menu .menu-item {
-    width:var(--ukuranwidthmenu-itemul);
-    height:var(--ukuranheightmenu-itemulli);
-    display:flex;
-    gap:1vw;
-    padding:20px;
+    width: var(--ukuranwidthmenu-itemul);
+    height: var(--ukuranheightmenu-itemulli);
+    display: flex;
+    gap: 1vw;
+    padding: 20px;
 }
 
 main .container-menu .menu-item li {
@@ -370,11 +370,12 @@ main .biodata {
     flex-direction: column;
     align-items: center;
 }
-main .biodata h1{
+
+main .biodata h1 {
     color: yellow;
     font-size: 3vw;
     font-family: "Montez";
-    text-shadow: 1px 2px 2px  rgba(0, 0, 0, 1);
+    text-shadow: 1px 2px 2px rgba(0, 0, 0, 1);
 }
 
 main .biodata img {
@@ -382,10 +383,12 @@ main .biodata img {
     border-radius: 20%;
     box-shadow: 1px 2px 5px rgba(0, 0, 0, 1);
 }
-main .biodata p{
+
+main .biodata p {
     text-align: center;
 }
-footer{
+
+footer {
     width: 100%;
     height: 6vh;
     color: white;
@@ -395,10 +398,12 @@ footer{
     align-items: center;
     gap: 1vw;
 }
-footer a{
+
+footer a {
     text-decoration: none;
     color: white;
 }
+
 /* ======================Break Point================ */
 /* ====================Responsive============= */
 /* =============================For tablet=============== */
