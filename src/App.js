@@ -24,7 +24,7 @@ function NavBar() {
       </div>
       <ul className="menu gone">
         <li>
-          <a href="#home">HOME</a>
+          <a href={<HeadEr />}>HOME</a>
         </li>
         <li>
           <a href="www.facebook.com">SERVICE</a>
