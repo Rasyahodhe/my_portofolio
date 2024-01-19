@@ -1,0 +1,75 @@
+.mediasocial {
+  height: fit-content;
+  padding-right: 20px;
+}
+.mediasocial ul {
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 1vh;
+}
+
+.mediasocial ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.7vw;
+  gap: 1vw;
+  transition: all 0.5s ease-in-out;
+  transform: translateX(70%);
+}
+
+.mediasocial ul li:hover {
+  transform: translateX(0);
+}
+
+.mediasocial ul li:hover a {
+  opacity: 1;
+}
+
+/* instagram */
+.mediasocial ul li:nth-child(1):hover img {
+  content: url("../../photo/icon/instagram/icons8-instagram.gif");
+}
+
+/* facebook */
+.mediasocial ul li:nth-child(2):hover img {
+  content: url("../../photo/icon/facebook/icons8-facebook.gif");
+}
+
+/* Whatsapp */
+.mediasocial ul li:nth-child(3):hover img {
+  content: url("../../photo/icon/whatsapp/icons8-whatsapp.gif");
+}
+
+/* Github */
+.mediasocial ul li:nth-child(4):hover img {
+  content: url("../../photo/icon/github/icons8-github.gif");
+}
+
+/* twitter */
+.mediasocial ul li:nth-child(5):hover img {
+  content: url("../../photo/icon/twitter/icons8-twitter.gif");
+}
+
+.mediasocial ul li img {
+  width: 20%;
+}
+
+.mediasocial ul li a {
+  width: 80%;
+  height: 5vh;
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  line-height: 5vh;
+  background-color: black;
+  border-radius: 10% 0% 0% 10%;
+  font-size: 2em;
+  opacity: 0;
+  transition: all 0.8s ease-in-out;
+}
+
+.mediasocial ul li a:hover {
+  color: aqua;
+}

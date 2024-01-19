@@ -1,50 +1,71 @@
 import "./App.css";
-
+import "./boostrap/boostrap.css";
+import "../node_modules/bulma/css/bulma.css";
+import "../node_modules/bootstrap/dist/js/bootstrap.bundle.js";
 import HeaderUsual from "../src/photo/header.png";
-import FacebookUsual from "../src/photo/icon/facebook/icons8-facebook-100.png";
-import InstagramUsual from "../src/photo/icon/instagram/icons8-insta-100.png";
-import GithubUsual from "../src/photo/icon/github/icons8-github-100.png";
-import WhatsappUsual from "../src/photo/icon/whatsapp/icons8-whatsapp-100.png";
-import TwitterUsual from "../src/photo/icon/twitter/icons8-twitter-100.png";
-import DownGif from "../src/photo/icon/down/icons8-down.gif";
+
+// Import Komponen Website
+import Card from "../src/comp/card";
+import MediaSocial from "../src/comp/MediaSocial";
 
 function NavBar() {
   return (
-    <nav>
-      <div className="title">
-        <h1>Rahim</h1>
-        <div className="menu-hamburger">
-          <input type="checkbox" id="menu-check"></input>
-          <div className="garishamburger">
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
+    <nav className=" container navbar navbar-expand-lg ">
+      <div className="container-fluid">
+        <a className="navbar-brand styleteks" href="www">
+          Rahim
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
+          <ul className="md navbar-nav">
+            <li className="nav-item">
+              <a
+                className="nav-link active fontstyle"
+                aria-current="page"
+                href="www"
+              >
+                Home
+              </a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link fontstyle" href="#">
+                Service
+              </a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link fontstyle" href="#">
+                Gallery
+              </a>
+            </li>
+
+            <li className="nav-item">
+              <a className="nav-link fontstyle" href="#">
+                Skill
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
-      <ul className="menu gone">
-        <li>
-          <a href={<HeadEr />}>HOME</a>
-        </li>
-        <li>
-          <a href="www.facebook.com">SERVICE</a>
-        </li>
-        <li>
-          <a href="www.facebook.com">GALERY</a>
-        </li>
-        <li>
-          <a href="www.facebook.com">PORTOFOLIO</a>
-        </li>
-        <li>
-          <a href="www.facebook.com">CONTATC</a>
-        </li>
-      </ul>
     </nav>
   );
 }
 function Space() {
   return <div className="space" id="home"></div>;
 }
+
 function HeadEr() {
   return (
     <section>
@@ -55,52 +76,52 @@ function HeadEr() {
           </div>
           <div className="tekswitch semuawidth">
             <span className="text first-text">I'm a </span>
-            <span className="text sec-text"></span>
+            <span className="text sec-text">Full Stack Development</span>
           </div>
           <div className="moto semuawidth">
             <p>
-              Tetap Bekerja dengan totalitas dan selalu haus akan ilmu, tetap
-              berkarya selalu semangat
+              Hai !!, I am Rahim. I am a full stack developer. I love coding,
+              watching movies, listening to music and sports, I am from
+              Indonesia, I have the motto "keep working in totality". nice to
+              meet you, if you are interested you can contact me by pressing the
+              contact button
             </p>
+          </div>
+          <div className="kontakku">
+            <button type="button" className="btn btn-primary" id="btn_contacme">
+              Contact Me
+            </button>
           </div>
         </div>
         <div className="images">
           <img src={HeaderUsual} alt="myphoto"></img>
-          <div className="buttonmenusocial">
-            <input type="checkbox" id="check-media"></input>
-            <img src="" alt=""></img>
-          </div>
-          <div className="mediasocial">
-            <ul className="social">
-              <li className="ukurantutupmenumedia">
-                <img src={InstagramUsual} alt=""></img>
-                <a href="ww">Instagram</a>
-              </li>
-              <li className="ukurantutupmenumedia">
-                <img src={FacebookUsual} alt=""></img>
-                <a href="www">Facebook</a>
-              </li>
-              <li className="ukurantutupmenumedia">
-                <img src={WhatsappUsual} alt=""></img>
-                <a href="www">Whatsapp</a>
-              </li>
-              <li className="ukurantutupmenumedia">
-                <img src={GithubUsual} alt=""></img>
-                <a href="www">Github</a>
-              </li>
-              <li className="ukurantutupmenumedia">
-                <img src={TwitterUsual} alt=""></img>
-                <a href="www">Twitter</a>
-              </li>
-            </ul>
-          </div>
         </div>
       </header>
-
-      <article id="service" className="page">
-        <h2>SERVICE</h2>
-      </article>
     </section>
+  );
+}
+
+function Service() {
+  return (
+    <article id="service" className="page">
+      <h2>SERVICE</h2>
+      <div
+        className="container-fluid d-md-flex  flex-row gap-3 justify-content-center column-gap-3 d-sm-flex
+"
+      >
+        <Card titel="Front -End" />
+        <Card titel="Back-End" />
+      </div>
+    </article>
+  );
+}
+
+function FooterDesign() {
+  return (
+    <footer>
+      <p>Design By Rasyah, you can see this code in my github</p>
+      <a href=""></a>
+    </footer>
   );
 }
 function AllComponent() {
@@ -109,6 +130,7 @@ function AllComponent() {
       <NavBar />
       <Space />
       <HeadEr />
+      <FooterDesign />
     </div>
   );
 }

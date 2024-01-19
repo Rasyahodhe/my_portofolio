@@ -22,80 +22,21 @@
 }
 
 body {
-  min-height: 10000px;
+  overflow: hidden;
   scroll-behavior: smooth;
 }
 
-/* Menu */
-nav {
-  display: flex;
-  width: 100%;
-  align-items: center;
-  justify-content: space-between;
-  position: fixed;
-  background-color: white;
-  z-index: 999;
-}
-
-nav ul {
-  width: 50%;
-  display: flex;
-  list-style: none;
-  gap: 2vw;
-  justify-content: left;
-  align-items: center;
-}
-
-nav ul li a {
-  text-decoration: none;
-  font-weight: bold;
-  color: blue;
-  font-family: var(--textmulish);
-  transition: 0.5s;
-}
-
-nav ul li a:hover {
-  color: aqua;
-}
-
-nav .title {
-  width: 25%;
-  display: flex;
-  justify-content: space-between;
-}
-
-nav .title h1 {
-  font-family: var(--textdancingscript);
-  width: 100%;
-  font-size: 4em;
-  font-weight: bold;
-  text-align: center;
-  background: linear-gradient(to right, #f32170, #ff6b08, #cf23cf, #eedd44);
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-}
-
-/*============================== Setting Menu Hamburger */
-nav .menu-hamburger {
-  position: relative;
-}
-
-nav .menu-hamburger #menu-check {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  opacity: 0;
-  z-index: 1;
-}
-
-nav .pencarian {
-  width: 25%;
-  text-align: center;
-}
-
 /* -------------------- */
+/* Setting Navbar */
+
+nav .styleteks {
+  font-family: var(--textdancingscript);
+  font-size: 2vw;
+}
+
+nav .fontstyle {
+  font-family: var(--textLato);
+}
 
 /*======================== Hanya Pemberi batas navbar antara navbar dan headnya */
 .space {
@@ -116,7 +57,7 @@ nav .pencarian {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: end;
+  align-items: center;
 }
 
 .head .title2 .teksnama {
@@ -170,7 +111,15 @@ nav .pencarian {
 
 .head .title2 .moto {
   width: 70%;
-  font-family: var(--textmulish);
+  font-family: var(--textpoppins);
+  text-align: justify;
+  font-size: 1vw;
+}
+/* Setting Tombol kontak */
+.head .kontakku {
+  width: 70%;
+  display: flex;
+  justify-content: start;
 }
 
 /* Images */
@@ -184,91 +133,30 @@ nav .pencarian {
 
 .head .images img {
   width: 70%;
+  animation-name: animationhead;
+  animation-duration: 3s;
+}
+
+@keyframes animationhead {
+  0% {
+    transform: translateY(150%);
+    -webkit-transform: translateY(150%);
+    -moz-transform: translateY(150%);
+    -ms-transform: translateY(150%);
+    -o-transform: translateY(150%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%);
+    -webkit-transform: translateY(0%);
+    -moz-transform: translateY(0%);
+    -ms-transform: translateY(0%);
+    -o-transform: translateY(0%);
+    opacity: 1;
+  }
 }
 
 /* Setting Button Check */
-.head .images .buttonmenusocial {
-  width: 0;
-  height: 0;
-  overflow: hidden;
-}
-
-.head .images .mediasocial {
-  height: fit-content;
-  padding-right: 20px;
-}
-
-.head .images .mediasocial ul {
-  height: fit-content;
-  display: flex;
-  flex-direction: column;
-  gap: 1vh;
-}
-
-.head .images .mediasocial ul li {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 0.7vw;
-  gap: 1vw;
-  transition: all 0.5s ease-in-out;
-  transform: translateX(70%);
-}
-
-.head .images .mediasocial ul li:hover {
-  transform: translateX(0);
-}
-
-.head .images .mediasocial ul li:hover a {
-  opacity: 1;
-}
-
-/* instagram */
-.head .images .mediasocial ul li:nth-child(1):hover img {
-  content: url("photo/icon/instagram/icons8-instagram.gif");
-}
-
-/* facebook */
-.head .images .mediasocial ul li:nth-child(2):hover img {
-  content: url("photo/icon/facebook/icons8-facebook.gif");
-}
-
-/* Whatsapp */
-.head .images .mediasocial ul li:nth-child(3):hover img {
-  content: url("photo/icon/whatsapp/icons8-whatsapp.gif");
-}
-
-/* Github */
-.head .images .mediasocial ul li:nth-child(4):hover img {
-  content: url("photo/icon/github/icons8-github.gif");
-}
-
-/* twitter */
-.head .images .mediasocial ul li:nth-child(5):hover img {
-  content: url("photo/icon/twitter/icons8-twitter.gif");
-}
-
-.head .images .mediasocial ul li img {
-  width: 20%;
-}
-
-.head .images .mediasocial ul li a {
-  width: 80%;
-  height: 5vh;
-  text-decoration: none;
-  color: white;
-  text-align: center;
-  line-height: 5vh;
-  background-color: black;
-  border-radius: 10% 0% 0% 10%;
-  font-size: 2em;
-  opacity: 0;
-  transition: all 0.8s ease-in-out;
-}
-
-.head .images .mediasocial ul li a:hover {
-  color: aqua;
-}
 
 section article {
   width: 100%;
@@ -278,6 +166,11 @@ section article {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+
+.page .card img {
+  width: 50px;
+  height: 50px;
 }
 
 /* Responsif */
