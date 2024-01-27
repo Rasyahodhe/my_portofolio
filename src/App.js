@@ -1,14 +1,19 @@
 import "./App.css";
 import "./boostrap/boostrap.css";
-import "../node_modules/bulma/css/bulma.css";
 import "../node_modules/bootstrap/dist/js/bootstrap.bundle.js";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import HeaderUsual from "../src/photo/header.png";
 
-// Import Komponen Website
-import Card from "../src/comp/card";
-import MediaSocial from "../src/comp/MediaSocial";
+// Import Komponen gambar
+import github from "../src/photo/icon/github/icons8-github-100.png";
 
-function NavBar() {
+// Import Komponen Website
+import Service from "./component/Service";
+import MediaSocial from "../src/component/MediaSocial";
+import Skill from "../src/component/Skill";
+import Gallery from "../src/component/Galerry";
+
+const NavBar = () => {
   return (
     <nav className=" container navbar navbar-expand-lg ">
       <div className="container-fluid">
@@ -35,24 +40,24 @@ function NavBar() {
               <a
                 className="nav-link active fontstyle"
                 aria-current="page"
-                href="www"
+                href="/"
               >
                 Home
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link fontstyle" href="#">
+              <a className="nav-link fontstyle" href="/service">
                 Service
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link fontstyle" href="#">
+              <a className="nav-link fontstyle" href="/gallery">
                 Gallery
               </a>
             </li>
 
             <li className="nav-item">
-              <a className="nav-link fontstyle" href="#">
+              <a className="nav-link fontstyle" href="/skill">
                 Skill
               </a>
             </li>
@@ -61,12 +66,14 @@ function NavBar() {
       </div>
     </nav>
   );
-}
-function Space() {
-  return <div className="space" id="home"></div>;
-}
+};
 
-function HeadEr() {
+// Component Home
+const Space = () => {
+  return <div className="space" id="home"></div>;
+};
+
+const HeadEr = () => {
   return (
     <section>
       <header className="head">
@@ -88,9 +95,7 @@ function HeadEr() {
             </p>
           </div>
           <div className="kontakku">
-            <button type="button" className="btn btn-primary" id="btn_contacme">
-              Contact Me
-            </button>
+            <MediaSocial />
           </div>
         </div>
         <div className="images">
@@ -99,43 +104,47 @@ function HeadEr() {
       </header>
     </section>
   );
-}
+};
 
-function Service() {
+const FooterDesign = () => {
   return (
-    <article id="service" className="page">
-      <h2>SERVICE</h2>
-      <div
-        className="container-fluid d-md-flex  flex-row gap-3 justify-content-center column-gap-3 d-sm-flex
-"
-      >
-        <Card titel="Front -End" />
-        <Card titel="Back-End" />
-      </div>
-    </article>
-  );
-}
-
-function FooterDesign() {
-  return (
-    <footer>
-      <p>Design By Rasyah, you can see this code in my github</p>
-      <a href=""></a>
+    <footer className="ft-bg">
+      <p>
+        Design By <i>Rasyah</i>, you can see this code in My github
+      </p>
+      <a href="https://github.com/Rasyahodhe">
+        <img src={github}></img>
+      </a>
     </footer>
   );
-}
-function AllComponent() {
+};
+const Home = () => {
   return (
     <div>
-      <NavBar />
       <Space />
       <HeadEr />
       <FooterDesign />
     </div>
   );
-}
-function App() {
+};
+const AllComponent = () => {
+  return (
+    <div>
+      <NavBar />
+      <Router>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/service" element={<Service />} />
+          <Route path="/skill" element={<Skill />} />
+          <Route path="/gallery" element={<Gallery />} />
+        </Routes>
+      </Router>
+    </div>
+  );
+};
+
+const App = () => {
   return <AllComponent />;
-}
+};
 
 export default App;

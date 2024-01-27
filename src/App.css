@@ -62,7 +62,8 @@ nav .fontstyle {
 
 .head .title2 .teksnama {
   width: 70%;
-  font-size: 2.3vw;
+  font-size: 3.3vw;
+  color: black;
   font-family: var(--textrubik);
 }
 
@@ -135,6 +136,7 @@ nav .fontstyle {
   width: 70%;
   animation-name: animationhead;
   animation-duration: 3s;
+  filter: drop-shadow(5px 5px 5px #222);
 }
 
 @keyframes animationhead {
@@ -156,7 +158,18 @@ nav .fontstyle {
   }
 }
 
-/* Setting Button Check */
+/* Setting Footer */
+.ft-bg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1vw;
+  font-size: 1vw;
+}
+
+.ft-bg img {
+  width: 2vw;
+}
 
 section article {
   width: 100%;

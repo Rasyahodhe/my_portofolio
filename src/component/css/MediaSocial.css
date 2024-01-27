@@ -1,0 +1,40 @@
+.ukurangambar {
+  width: 15%;
+}
+
+.bungkus {
+  width: 50%;
+}
+.bungkus .isi {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bungkus .isi a {
+  transition: 0.5s;
+  padding-right: 0;
+  padding-left: 0;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+  text-align: center;
+}
+
+.bungkus .isi a:hover {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.bungkus .isi:nth-child(1):hover .ukurangambar {
+  content: url("../../photo/icon/instagram/icons8-instagram.gif");
+}
+.bungkus .isi:nth-child(2):hover .ukurangambar {
+  content: url("../../photo/icon/facebook/icons8-facebook.gif");
+}
+.bungkus .isi:nth-child(3):hover .ukurangambar {
+  content: url("../../photo/icon/whatsapp/icons8-whatsapp.gif");
+}
+.bungkus .isi:nth-child(4):hover .ukurangambar {
+  content: url("../../photo/icon/github/icons8-github.gif");
+}

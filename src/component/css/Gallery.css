@@ -1,0 +1,75 @@
+/* @import url("./Font.css"); */
+
+.gl_h1 {
+  font-family: var(--textdancingscript);
+  text-align: center;
+  font-size: 3vw;
+}
+
+.gl_cont_ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 1vw;
+}
+
+.gl_cont_ul .gl_element_li {
+  margin: 1vw;
+  padding: 1vw;
+  position: relative;
+}
+.gl_cont_ul .gl_element_li .gl_element_li_component {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2vh;
+}
+.gl_cont_ul .backgroundspan {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(165, 163, 163);
+  filter: blur(100px);
+  -webkit-filter: blur(100px);
+}
+
+.gl_cont_ul .gl_element_li h2 {
+  font-family: var(--textmulish);
+}
+
+.gl_cont_ul .gl_element_li p {
+  font-family: var(--textrokkit);
+}
+
+.gl_cont_ul .gl_element_li img {
+  width: 30vw;
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  transition: 1s;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+  -o-transition: 1s;
+  overflow: hidden;
+  border-radius: 5%;
+  -webkit-border-radius: 5%;
+  -moz-border-radius: 5%;
+  -ms-border-radius: 5%;
+  -o-border-radius: 5%;
+}
+
+.gl_cont_ul .gl_element_li img:hover {
+  filter: grayscale(0%);
+  width: 35vw;
+  -webkit-filter: grayscale(0%);
+  border-radius: 20% 0% 20% 0%;
+  -webkit-border-radius: 20% 0% 20% 0%;
+  -moz-border-radius: 20% 0% 20% 0%;
+  -ms-border-radius: 20% 0% 20% 0%;
+  -o-border-radius: 20% 0% 20% 0%;
+  box-shadow: 1vw 1vw 1vw rgba(0, 0, 0, 0.5);
+}
