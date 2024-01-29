@@ -1,5 +1,8 @@
 import "./App.css";
 import "./boostrap/boostrap.css";
+import "./responsive/fortablet.css";
+import "./responsive/forandroid600.css";
+import "./responsive/forandroid320.css";
 import "../node_modules/bootstrap/dist/js/bootstrap.bundle.js";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import HeaderUsual from "../src/photo/header.png";

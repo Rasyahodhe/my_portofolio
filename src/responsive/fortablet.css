@@ -1,0 +1,62 @@
+/* tablet landscape ipad, io-laptop and desktop */
+@media (max-width: 801px) {
+  /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
+  /* Setting Font navbar */
+  .container .container-fluid .styleteks {
+    font-size: 5vw;
+  }
+
+  /* Setting Navbar Element */
+  .container .container-fluid #navbarNav .navbar-nav .nav-item {
+    text-align: center;
+  }
+  .container .container-fluid #navbarNav .navbar-nav .nav-item .nav-link:hover {
+    color: blue;
+  }
+
+  /* Setting Header */
+  .head {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 2vh;
+  }
+
+  /* Setting Headet immages */
+  .head .images {
+    width: 100%;
+  }
+
+  .head .images img {
+    width: 70%;
+  }
+
+  /* Setting Konten Header */
+  .head .title2 {
+    width: 100%;
+    height: 35vh;
+  }
+  .head .title2 .teksnama {
+    font-size: 6vw;
+  }
+
+  .head .title2 .tekswitch .text {
+    font-size: 4vw;
+  }
+
+  .head .title2 .moto p {
+    font-size: 2vw;
+  }
+
+  /* Setting Bagian Footer */
+  .ft-bg {
+    padding: 10%;
+  }
+  .ft-bg p {
+    font-size: 2vw;
+  }
+
+  .ft-bg a img {
+    width: 3vw;
+  }
+}
