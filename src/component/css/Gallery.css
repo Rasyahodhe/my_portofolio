@@ -3,7 +3,7 @@
 .gl_h1 {
   font-family: var(--textdancingscript);
   text-align: center;
-  font-size: 3vw;
+  font-size: 5vw;
 }
 
 .gl_cont_ul {
@@ -26,7 +26,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 2vh;
+  gap: 1vh;
 }
 .gl_cont_ul .backgroundspan {
   position: absolute;
@@ -37,11 +37,11 @@
   -webkit-filter: blur(100px);
 }
 
-.gl_cont_ul .gl_element_li h2 {
+.gl_con_custom .gl_cont_ul .gl_element_li h2 {
   font-family: var(--textmulish);
 }
 
-.gl_cont_ul .gl_element_li p {
+.gl_con_custom .gl_cont_ul .gl_element_li p {
   font-family: var(--textrokkit);
 }
 

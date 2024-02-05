@@ -1,0 +1,23 @@
+.skl_head {
+  font-family: var(--textdancingscript);
+  text-align: center;
+  font-size: 5vw;
+}
+
+.skl_container_element {
+  width: 100%;
+  padding: 10px;
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.skl_container_element li {
+  width: 30%;
+  min-height: fit-content;
+  border: 1px solid black;
+}
+.skl_container_element li .skl_li_content {
+  height: 7vh;
+}

@@ -2,7 +2,10 @@
 @media (max-width: 600px) {
   /* Setting Font navbar */
   .container .container-fluid .styleteks {
-    font-size: 5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 6vw;
   }
 
   /* Setting Navbar Element */
@@ -13,7 +16,11 @@
     color: blue;
   }
 
-  /* Setting Header */
+  .btn_size_cs {
+    width: 6vw;
+  }
+
+  /* ============================================Setting Header */
   .head {
     flex-direction: column-reverse;
     justify-content: center;
@@ -46,8 +53,33 @@
   .head .title2 .moto p {
     font-size: 2vw;
   }
+  /* Setting Kontakku */
+  .kontakku .dropdown .btn {
+    width: 100%;
+    font-size: 3vw;
+  }
+  /*================================================== Setting Kontent Gallery */
+  #root .gl_h1 {
+    font-size: 15vw;
+  }
 
-  /* Setting Bagian Footer */
+  .gl_cont_ul .gl_element_li .gl_element_li_component {
+    gap: 1vh;
+  }
+  .gl_cont_ul .gl_element_li .gl_element_li_component img {
+    width: 90%;
+  }
+  .gl_cont_ul .gl_element_li .gl_element_li_component img:hover {
+    width: 100%;
+  }
+
+  .gl_cont_ul .gl_element_li .gl_element_li_component h2 {
+    font-size: 4vw;
+  }
+  .gl_cont_ul .gl_element_li .gl_element_li_component p {
+    font-size: 3vw;
+  }
+  /* ================================================Setting Bagian Footer */
   .ft-bg {
     padding: 10%;
   }

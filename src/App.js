@@ -32,7 +32,7 @@ const NavBar = () => {
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span class="navbar-toggler-icon"></span>
+          <span class="navbar-toggler-icon btn_size_cs"></span>
         </button>
         <div
           class="collapse navbar-collapse justify-content-end"

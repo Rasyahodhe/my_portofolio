@@ -46,6 +46,11 @@
     font-size: 2vw;
   }
 
+  /* Setting Kontakku */
+  .kontakku .dropdown .btn {
+    width: 100%;
+    font-size: 3vw;
+  }
   /* Setting Bagian Footer */
   .ft-bg {
     padding: 10%;
