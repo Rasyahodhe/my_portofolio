@@ -79,6 +79,25 @@
   .gl_cont_ul .gl_element_li .gl_element_li_component p {
     font-size: 3vw;
   }
+
+  /* ================================================Setting Bagian Skill */
+  #root .skl_head {
+    font-size: 15vw;
+  }
+  .skl_container_element {
+    flex-direction: column;
+  }
+  #root .skl_container_element li {
+    width: 80%;
+  }
+  .skl_container_element li .skl_li_content {
+    width: 100%;
+  }
+
+  #root .skl_container_element li:hover .skl_li_content h2 {
+    font-size: 4vw;
+  }
+
   /* ================================================Setting Bagian Footer */
   .ft-bg {
     padding: 10%;

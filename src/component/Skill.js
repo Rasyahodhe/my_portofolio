@@ -3,11 +3,26 @@ import "../../node_modules/bootstrap/dist/js/bootstrap.bundle";
 import "./css/Skill.css";
 
 var Skillku = [
-  { namaSkill: "Javascript", sr: "" },
-  { namaSkill: "HTML", sr: "" },
-  { namaSkill: "CSS", sr: "" },
-  { namaSkill: "React Js", sr: "" },
-  { namaSkill: "Boostrap", sr: "" },
+  {
+    namaSkill: "Javascript",
+    sr: "https://raw.githubusercontent.com/Rasyahodhe/my_portofolio/develop/src/photo/Skill/javascript.png",
+  },
+  {
+    namaSkill: "HTML",
+    sr: "https://raw.githubusercontent.com/Rasyahodhe/my_portofolio/develop/src/photo/Skill/html.png",
+  },
+  {
+    namaSkill: "CSS",
+    sr: "https://raw.githubusercontent.com/Rasyahodhe/my_portofolio/develop/src/photo/Skill/css.png",
+  },
+  {
+    namaSkill: "React Js",
+    sr: "https://raw.githubusercontent.com/Rasyahodhe/my_portofolio/develop/src/photo/Skill/react.png",
+  },
+  {
+    namaSkill: "Boostrap",
+    sr: "https://raw.githubusercontent.com/Rasyahodhe/my_portofolio/develop/src/photo/Skill/bostrap.png",
+  },
 ];
 
 const NameSkill = (props) => {
