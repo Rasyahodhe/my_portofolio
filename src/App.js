@@ -6,7 +6,6 @@ import "./responsive/forandroid320.css";
 import "../node_modules/bootstrap/dist/js/bootstrap.bundle.js";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import HeaderUsual from "../src/photo/header.png";
-
 // Import Komponen gambar
 import github from "../src/photo/icon/github/icons8-github-100.png";
 
